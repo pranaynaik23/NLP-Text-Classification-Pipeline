@@ -120,7 +120,7 @@ class DataValidation:
             logging.info("Checking base file path for raw data comparison")
             if not os.path.isfile(self.data_validation_config.VALID_RAW_DATA_FILE_PATH):
                 base_file_path_raw = self.data_ingestion_artifact.raw_data_file_path
-                shutil.copy(self.data_ingestion_artifact.imbalance_data_file_path,self.data_validation_config.VALID_RAW_DATA_FILE_PATH)
+                shutil.copy(self.data_ingestion_artifact.raw_data_file_path,self.data_validation_config.VALID_RAW_DATA_FILE_PATH)
             else:
                 base_file_path_raw = self.data_validation_config.VALID_RAW_DATA_FILE_PATH
             logging.info(f"base_file_path={base_file_path_raw}")

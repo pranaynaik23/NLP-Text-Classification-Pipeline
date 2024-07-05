@@ -21,3 +21,13 @@ DATA_VALIDATION_VALID_DIR: str = "validated"
 DATA_VALIDATION_INVALID_DIR: str = "invalid"
 DATA_VALIDATION_DRIFT_REPORT_DIR: str = "drift_report"
 DATA_VALIDATION_DRIFT_REPORT_FILE_NAME: str = "report.yaml"
+
+#Data Transformation constants
+DATA_TRANSFORMATION_ARTIFACTS_DIR = 'DataTransformationArtifacts'
+TRANSFORMED_FILE_NAME = "final.csv"
+DATA_DIR = "data"
+ID = 'id'
+AXIS = 1
+INPLACE = True
+DROP_COLUMNS = ['Unnamed: 0','count','hate_speech','offensive_language','neither']
+CLASS = 'class'

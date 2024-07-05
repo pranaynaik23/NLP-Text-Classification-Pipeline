@@ -14,3 +14,7 @@ class DataValidationArtifacts:
     invalid_raw_data_file_path: str
     drift_report_file_path: str
 
+@dataclass
+class DataTransformationArtifacts:
+     transformed_data_path: str
+     
